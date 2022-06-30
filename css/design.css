@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(45deg,#e02dae,#1d3dbf,#d40000);
+  background: linear-gradient(45deg,#ff5ad0,#1d3dbf,#090000);
   animation: change 20s ease-in-out infinite;
   background-size: 400%;
 }
@@ -56,10 +56,10 @@
 
 .manual-btn
 {
-  border: 2px solid white;
-  margin: 500px 0px 0px 30px;
+  border: 2px solid rgb(0, 0, 0);
+  margin: 600px 0px 0px 30px;
   border-radius: 10px;
-  padding: 7px;
+  padding: 9px;
   transition: 1s;
   cursor: pointer;
 }
