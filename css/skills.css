@@ -1,0 +1,334 @@
+.hero_paris {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/paris.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.caroussel {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #ff5ad0, #1d3dbf, #090000);
+  animation: change 20s ease-in-out infinite;
+  background-size: 400%;
+}
+
+.container2 {
+  overflow: hidden;
+  width: 1000px;
+
+}
+
+.wrapper {
+  display: flex;
+  width: 500%;
+}
+
+.wrapper input {
+  display: none;
+}
+
+.padding {
+  justify-content: center;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+
+}
+
+.slide img {
+  width: 100%;
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #c866d1, #52adbf);
+  border-image-slice: 3;
+
+
+}
+
+.navigation-btn {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 970px;
+}
+
+.manual-btn {
+  border: 2px solid rgb(0, 0, 0);
+  margin: 600px 0px 0px 30px;
+  border-radius: 10px;
+  padding: 9px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.manual-btn:hover {
+  background: white;
+  transition: 2s;
+}
+
+#radio1:checked~.first {
+  margin: 0;
+
+}
+
+#radio2:checked~.first {
+  margin-left: -20%;
+
+}
+
+#radio3:checked~.first {
+  margin-left: -40%;
+}
+
+#radio4:checked~.first {
+  margin-left: -60%;
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(26, 24, 24);
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 50em;
+  height: 50em;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+
+/*
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    transition: 0.4s;
+  }
+  */
+
+/* 3D */
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(26, 24, 24);
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 50em;
+  height: 50em;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+
+
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    transition: 0.4s;
+  }
+  
+
+  @font-face {
+    font-family: neon;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+  }
+  
+  .container {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .neon {
+    font-family: neon;
+    color: #FB4264;
+    font-size: 6vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #F40A35;
+  }
+  
+  .flux {
+    font-family: neon;
+    color: #426DFB;
+    font-size: 6vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #2356FF;
+  }
+  
+  .neon {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+  }
+  
+  @keyframes neon {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+      color: #FED128;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+      color: #806914;
+    }
+  }
+  
+  .flux {
+    animation: flux 2s linear infinite;
+    -moz-animation: flux 2s linear infinite;
+    -webkit-animation: flux 2s linear infinite;
+    -o-animation: flux 2s linear infinite;
+  }
+  
+  @keyframes flux {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+      color: #28D7FE;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+      color: #146C80;
+    }
+  }
+  
